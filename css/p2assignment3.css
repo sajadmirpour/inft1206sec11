@@ -8,7 +8,12 @@ div {
   background-color: red;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 100px;
+  font-size: 30px;
+  border: 3px;
+  border-radius: 10px;
+
+
 
   
 }
