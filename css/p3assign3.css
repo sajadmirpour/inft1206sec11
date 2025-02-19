@@ -66,5 +66,20 @@ Description: recreating the wesite page
     line-height: 1.5;
     letter-spacing: 0.5px;
     word-spacing: 1px;
-}
-  
+  }
+
+  /* all headings in arial*/
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif;
+  }
+
+  h1{
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+    
+  h2{
+    font-size: 2em;
+    letter-spacing: 1px;
+  }
