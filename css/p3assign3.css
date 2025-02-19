@@ -1,5 +1,11 @@
 /* General setup */
-
+/*
+Name: Sajad Mirpour
+StudentID:100966297
+Date: Feb 18 2025
+File: p3assign3.css
+Description: recreating the wesite page 
+*/
 * {
     box-sizing: border-box;
   }
@@ -43,4 +49,14 @@
   }
   
   /* WRITE YOUR CODE BELOW HERE */
+
+  /* adding the fonts to be used*/
+  @font-face {
+    font-family:georgia;
+    src: url('https://fonts.googleapis.com/css2?family=Georgia&display=swap');
+  }
+  @font-face {
+    font-family:Arial;
+    src: url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
+  }
   
