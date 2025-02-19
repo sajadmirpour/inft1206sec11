@@ -59,4 +59,12 @@ Description: recreating the wesite page
     font-family:Arial;
     src: url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
   }
+
+  body {
+    font-family: 'Georgia', serif;
+    font-size: 10px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
   
