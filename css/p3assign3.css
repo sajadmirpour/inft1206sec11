@@ -83,3 +83,37 @@ Description: recreating the wesite page
     font-size: 2em;
     letter-spacing: 1px;
   }
+
+  /*link styling*/
+  a:visited{
+    color: #a66;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #b84;
+  }
+  
+  a:focus{
+    text-decoration: none;
+    color: #b84;
+  }
+
+  a:active{
+    color: #8b3c3c;
+  }
+  
+  /*did have to serach on google how to link external file for icon*/
+  a[href^="http"]::after {
+    content: '';
+    background-image: url(../images/external-link-52.png);
+    background-size: contain; 
+    width: 10px; 
+    height: 10px; 
+    display: inline-block; 
+    margin-left: 5px; /
+  }
+
+  
+
+
