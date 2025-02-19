@@ -59,18 +59,21 @@ Description: recreating the wesite page
     font-family:Arial;
     src: url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
   }
-
+   
   body {
-    font-family: 'Georgia', serif;
-    font-size: 10px;
+    font-family: 'Georgia', serif; 
+    font-size: 10px;              
     line-height: 1.5;
     letter-spacing: 0.5px;
     word-spacing: 1px;
+    color: #000;   
   }
 
   /* all headings in arial*/
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Arial', sans-serif;
+    margin: 0; 
+    padding: 0;
   }
 
   h1{
@@ -84,7 +87,15 @@ Description: recreating the wesite page
     letter-spacing: 1px;
   }
 
+  aside h2{
+    text-align: center;
+  }
+
   /*link styling*/
+  a {
+    color: #a66;
+    text-decoration: underline;
+  }
   a:visited{
     color: #a66;
   }
@@ -120,8 +131,88 @@ Description: recreating the wesite page
   }
 
   /*list styling*/
-
+  section ul {
+    list-style: disc;   
+    margin: 0 0 20px 40px; 
+    padding: 0;
+  }
   
+  section ol {
+    list-style: decimal;
+    margin: 0 0 20px 40px;
+    padding: 0;
+  }
+  
+  /* Aside Lists */
+  
+  aside ul {
+    list-style: none;   
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+  
+  aside ul li {
+    position: relative;
+    padding-left: 20px;    /* Room for the square bullet */
+  }
+  
+  /* Black square bullet */
+  aside ul li::before {
+    content: "\25A0";      /* black square character */
+    color: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  /*Nav-Right Boxes*/
+  
+  nav ul {
+    list-style: none;      /* No bullets in nav */
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-bottom: 10px;
+  }
+  
+  /* Boxed links in nav */
+  nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #a66;      /* burgundy text */
+    border: 2px solid #a66;  /* burgundy border */
+    background-color: #fff; /* white background for the box */
+    padding: 10px;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  nav a:hover {
+    background-color: #a66;  /* burgundy fill on hover */
+    color: #fff;             /* white text on hover */
+  }
+  
+  nav a:active {
+    background-color: #8b3c3c;
+    color: #fff;
+  }
+  
+  /*Footer*/
+  
+  footer {
+    font-size: 0.8em;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  p, ul, ol {
+    margin: 0;
+    padding: 0;
+  }
 
   
 
