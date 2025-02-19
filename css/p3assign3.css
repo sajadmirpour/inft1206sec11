@@ -101,7 +101,8 @@ Description: recreating the wesite page
   }
 
   aside h2{
-    text-align: center;
+    text-align: left;
+
   }
 
   /*link styling*/
