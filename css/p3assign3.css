@@ -76,6 +76,19 @@ Description: recreating the wesite page
     padding: 0;
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px 0; /* 10px of space below headings */
+  }
+  
+  /* Give paragraphs a little bottom margin as well */
+  p {
+    margin: 0 0 15px 0; /* 15px of space below paragraphs */
+  }
+
+  .id1{
+    margin: 0 0 15px 0; 
+  }
+
   h1{
     font-size: 3em;
     text-align: center;
