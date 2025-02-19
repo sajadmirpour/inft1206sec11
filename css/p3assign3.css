@@ -114,6 +114,15 @@ Description: recreating the wesite page
     margin-left: 5px; /
   }
 
+  /*adding the indented pargraphs through a class named indent in html file*/
+  .indent{
+    text-indent: 15px;
+  }
+
+  /*list styling*/
+
+  
+
   
 
 
