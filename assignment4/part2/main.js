@@ -1,7 +1,7 @@
 
 //Name: Sajad Mirpour
 //File: main.js
-//Date: 24 March 2025
+//Date: 29 March 2025
 //This file is js for displaying a webpage that displays an image gallery
 
 const displayedImage = document.querySelector('.displayed-img');
