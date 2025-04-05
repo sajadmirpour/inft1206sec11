@@ -24,9 +24,21 @@ const altText = {
 
 /* Looping through images */
 
-const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
-thumbBar.appendChild(newImage);
+for (const image of images) {
+	
+	const newImage = document.createElement('img');
+	//setting the attribute to look for an image src for whatever image is being showen
+	newImage.setAttribute('src', `images/${image}`);
+	
+	//setting the attribute to look for an altText for whatever image is being displayed(or not being displayed)
+	newImage.setAttribute('alt', altText[image]);
+	thumbBar.appendChild(newImage);	
+	
+	//making it so it changes the image to whatever image was clicked on
+	newImage.addEventListener('click', i => {
+		displayedImage.src = i.target.src;
+		displayedImage.alt = i.target.alt;
+	});
+}
 
 /* Wiring up the Darken/Lighten button */
