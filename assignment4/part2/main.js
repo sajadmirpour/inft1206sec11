@@ -42,3 +42,30 @@ for (const image of images) {
 }
 
 /* Wiring up the Darken/Lighten button */
+
+//adding an event listener to look for a click on the lighten/darken button
+btn.addEventListener('click', () => {
+	
+	//getting the class attribute to determine which option is selected
+	const btnOption = btn.getAttribute('class');
+	
+	//if the class attribute is dark / if the picture is bright
+	if(btnOption === 'dark'){
+		
+		//changing the attributes to be light
+		btn.setAttribute('class', 'light');
+		btn.textContent = 'Lighten';
+		
+		//making the image darker
+		overlay.style.backgroundColor = "rgb(0 0 0 / 50%)";
+	//if the class attrubute isn't dark	
+	}else{
+		
+		//changing the attributes to dark
+		btn.setAttribute('class', 'dark');
+		btn.textContent = 'Darken';
+		
+		//making the image lighter
+		overlay.style.backgroundColor = "rgb(0 0 0 / 0%)";
+	}
+});
