@@ -106,6 +106,24 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
+
 }
+
+//making it so the balls change color when they collide 
+function loop() {
+  ctx.fillStyle = "rgb(0 0 0 / 25%)";
+  ctx.fillRect(0, 0, width, height);
+
+  for (const ball of balls) {
+    ball.draw();
+    ball.update();
+    ball.collisionDetect();
+  }
+
+  requestAnimationFrame(loop);
+}
+
+//calling the loop function
+loop();
 
 
