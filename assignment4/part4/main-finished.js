@@ -3,6 +3,10 @@
 //Date: April 4 2025
 //Bouncing balls
 
+//to use later as a counter
+const para = document.querySelector('p');
+let count = 0;
+
 // set up canvas
 
 const canvas = document.querySelector("canvas");
@@ -157,6 +161,7 @@ class EvilCircle extends Shape {
 
 }
 
+// define array to store balls and populate it
 const balls = [];
 
 while (balls.length < 25) {
@@ -173,6 +178,8 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
+  count++;
+  para.textContent = 'Ball count: ' + count;
 }
 
 function loop() {
