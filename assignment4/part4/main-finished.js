@@ -1,7 +1,7 @@
 //Name: Sajad Mirpour
 //File: main-finished.js
 //Date: April 4 2025
-//Bouncing balls
+//Bouncing balls next step 
 
 //to use later as a counter
 const para = document.querySelector('p');
