@@ -64,3 +64,18 @@ update() {
   this.x += this.velX;
   this.y += this.velY;
 }
+
+//making it detect whenever any of the balls collide with each other
+collisionDetect() {
+  for (const ball of balls) {
+    if (this !== ball) {
+      const dx = this.x - ball.x;
+      const dy = this.y - ball.y;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+
+      if (distance < this.size + ball.size) {
+        ball.color = this.color = randomRGB();
+      }
+    }
+  }
+}
