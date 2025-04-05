@@ -79,3 +79,33 @@ collisionDetect() {
     }
   }
 }
+
+}
+
+//making a blue ball and giving it attributes
+const testBall = new Ball(50, 100, 4, 4, "blue", 10);
+
+//displaying the ball on the screen
+testBall.draw();
+
+//creating a constant ball array to store the balls
+const balls = [];
+
+//while loop for creating new balls with different colors and sizes
+while (balls.length < 25) {
+  const size = random(10, 20);
+  const ball = new Ball(
+    // ball position always drawn at least one ball width
+    // away from the edge of the canvas, to avoid drawing errors
+    random(0 + size, width - size),
+    random(0 + size, height - size),
+    random(-7, 7),
+    random(-7, 7),
+    randomRGB(),
+    size,
+  );
+
+  balls.push(ball);
+}
+
+
