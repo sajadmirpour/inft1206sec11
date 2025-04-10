@@ -17,7 +17,6 @@ showHideBtn.onclick = function() {
   }
 };
 
-
 // functionality for adding a new comment via the comments form
 
 const form = document.querySelector('.comment-form');
@@ -46,19 +45,17 @@ function submitComment() {
 
   nameField.value = '';
   commentField.value = '';
+  
+  // Announce to screen readers that a comment was added
+  const announcement = document.createElement('div');
+  announcement.setAttribute('aria-live', 'polite');
+  announcement.setAttribute('role', 'status');
+  announcement.style.position = 'absolute';
+  announcement.style.clip = 'rect(0 0 0 0)';
+  announcement.textContent = 'Comment added successfully';
+  document.body.appendChild(announcement);
+  
+  setTimeout(() => {
+    document.body.removeChild(announcement);
+  }, 1000);
 }
-
- // Announce to screen readers that a comment was added
- const announcement = document.createElement('div');
- announcement.setAttribute('aria-live', 'polite');
- announcement.setAttribute('role', 'status');
- announcement.style.position = 'absolute';
- announcement.style.clip = 'rect(0 0 0 0)';
- announcement.textContent = 'Comment added successfully';
- document.body.appendChild(announcement);
- 
- setTimeout(() => {
-   document.body.removeChild(announcement);
- }, 1000);
-}
-
