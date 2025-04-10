@@ -7,7 +7,7 @@ html, body {
 
 html {
   font-size: 10px;
-  background-color: #dde;
+  background-color: #f0f0f5;
 }
 
 body {
@@ -20,18 +20,18 @@ body {
 
 h1, h2, h3 {
   font-family: 'Sonsie One', cursive;
-  color: #2a2a2a;
+  color: #1a1a1a;
 }
 
 p, input, li, table, label, textarea, figcaption {
   font-family: 'Open Sans Condensed', sans-serif;
-  color: #2a2a2a;
+  color: #1a1a1a;
 }
 
 h1 {
   font-size: 4rem;
   text-align: center;
-  color: white;
+  color: #ffffff;
   text-shadow: 2px 2px 10px black;
 }
 
@@ -52,11 +52,16 @@ p, li, table, figcaption {
 /* || header layout */
 
 nav, article, footer, .secondary {
-  background-color: green;
+  background-color: #006400; /* Darker green for better contrast */
 }
 
 article, footer, .secondary {
   padding: 10px 30px;
+  color: #ffffff; /* White text for better contrast on dark backgrounds */
+}
+
+article h2, article h3, footer h2, footer h3, .secondary h2, .secondary h3 {
+  color: #ffffff;
 }
 
 article {
@@ -64,12 +69,12 @@ article {
 }
 
 header {
-  background-color: green;
+  background-color: #006400; /* Darker green for better contrast */
 }
 
 nav {
   height: 50px;
-  background-color: #ff80ff;
+  background-color: #990099; /* Darker purple for better contrast */
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
@@ -93,7 +98,13 @@ nav a {
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: #ffffff;
+  padding: 5px;
+}
+
+nav a:hover, nav a:focus {
+  background-color: #ffffff;
+  color: #990099;
 }
 
 nav .search {
@@ -143,18 +154,21 @@ footer {
 
 table {
   width: 100%;
-  background-color: #dde;
+  background-color: #f0f0f5;
   border-collapse: collapse;
+  color: #1a1a1a; /* Ensure table text is dark for good contrast */
 }
 
 caption {
   font-weight: bold;
   font-size: 1.8rem;
   padding: 10px 0;
+  color: #ffffff;
 }
 
 th, td {
   padding: 10px;
+  border: 1px solid #cccccc;
 }
 
 td {
@@ -162,11 +176,13 @@ td {
 }
 
 th[scope="col"] {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #ffffff;
+  background-color: #005000;
+  color: #ffffff;
 }
 
 tbody tr:nth-child(odd) {
-  background-color: #def;
+  background-color: #e0e0f0;
 }
 
 /* styling content images and audio */
@@ -185,6 +201,7 @@ figcaption {
   text-align: center;
   margin-top: 10px;
   font-style: italic;
+  color: #ffffff;
 }
 
 audio {
@@ -194,16 +211,21 @@ audio {
 /* Comments styling */
 
 .comments {
-  background-color: #def;
+  background-color: #004000;
   padding: 10px;
+  color: #ffffff;
 }
 
 .show-hide {
   cursor: pointer;
+  background-color: #333333;
+  color: #ffffff;
+  border: 2px solid #ffffff;
 }
 
 .comments h3 {
   font-size: 2rem;
+  color: #ffffff;
 }
 
 .comments h3:nth-of-type(2) {
@@ -223,11 +245,13 @@ audio {
   align-self: center;
   flex: 2;
   text-align: right;
+  color: #ffffff;
 }
 
 .comment-form input, .comment-form textarea {
   margin-left: 1rem;
   flex: 6;
+  border: 2px solid #333333;
 }
 
 .comment-form textarea {
@@ -246,8 +270,8 @@ audio {
 }
 
 .comment-form input[type="submit"], .show-hide {
-  background: #333;
-  border: 0;
+  background: #333333;
+  border: 2px solid #ffffff;
   color: white;
 }
 
@@ -264,6 +288,8 @@ audio {
 .comment-container li {
   list-style-type: none;
   display: flex;
+  border-bottom: 1px solid #ffffff;
+  padding: 10px 0;
 }
 
 .comment-container li p:nth-child(1) {
@@ -277,8 +303,19 @@ audio {
 
 /* Focus indicators for accessibility */
 a:focus, button:focus, input:focus, textarea:focus {
-  outline: 3px solid #007bff;
+  outline: 3px solid #ffff00;
   outline-offset: 2px;
+}
+
+/* Link styling for better contrast */
+.secondary a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.secondary a:hover, .secondary a:focus {
+  background-color: #ffffff;
+  color: #006400;
 }
 
 /* Responsive design for better accessibility */
