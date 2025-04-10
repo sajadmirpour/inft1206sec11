@@ -20,12 +20,12 @@ body {
 
 h1, h2, h3 {
   font-family: 'Sonsie One', cursive;
-  color: #1a1a1a;
+  color: #ffffff;
 }
 
 p, input, li, table, label, textarea, figcaption {
   font-family: 'Open Sans Condensed', sans-serif;
-  color: #1a1a1a;
+  color: #ffffff;
 }
 
 h1 {
@@ -118,6 +118,7 @@ nav .search {
 .search input {
   font-size: 1.6rem;
   height: 32px;
+  color: #1a1a1a; /* Keep form input text dark for readability */
 }
 
 .search input[type="search"] {
@@ -154,9 +155,9 @@ footer {
 
 table {
   width: 100%;
-  background-color: #f0f0f5;
+  background-color: #006400;
   border-collapse: collapse;
-  color: #1a1a1a; /* Ensure table text is dark for good contrast */
+  color: #ffffff;
 }
 
 caption {
@@ -168,7 +169,7 @@ caption {
 
 th, td {
   padding: 10px;
-  border: 1px solid #cccccc;
+  border: 1px solid #ffffff;
 }
 
 td {
@@ -182,7 +183,11 @@ th[scope="col"] {
 }
 
 tbody tr:nth-child(odd) {
-  background-color: #e0e0f0;
+  background-color: #005000;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #006400;
 }
 
 /* styling content images and audio */
